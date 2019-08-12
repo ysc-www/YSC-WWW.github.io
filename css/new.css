@@ -1,0 +1,263 @@
+html,body{
+	margin: 0;
+	padding:0;
+	width: 1920px;
+	height: 100%;
+}
+ul,ol,li,p{
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+input{
+	margin: 0;
+	padding: 0;
+	border:none;
+	outline: none;
+}
+button{
+	outline: none;
+	border:none;
+	background-color: #fff;
+}
+
+/*样式初始化*/
+
+/*预设样式 begin*/
+
+/*图片自适应*/
+.auto-img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*父级清楚浮动*/
+.clearflow{
+	overflow: hidden;
+}
+/*清除子元素带来的影响*/
+.clearfix{
+	clear: both;
+}
+/*预设样式 end*/
+/*头部样式*/
+.head{
+	height: 90px;
+	background-color: #ffffff;
+	position: relative;
+}
+.head>.logo{
+	position: absolute;
+	left:360px;
+	top:10px;
+}
+.head>div>span{
+	position: absolute;
+	right:375px;
+	top:10px;
+}
+.head>div>div>span{
+	position: absolute;
+	right:375px;
+	top:45px;
+}
+.head .search{
+	position: absolute;
+	top: 45px;
+	right: 375px;
+	width: 244px;
+	height: 27px;
+	border: 1px solid #8ba02b;
+	border-radius: 8px;
+}
+.head .search>button{
+	height: 27px;
+    color: #ffffff;
+	background-color: #8ba02b;
+}
+/*END 头部样式*/
+/*导航条*/
+.nav{
+	width: 100%;
+	background-color: #8ba02b;
+}
+.nav-in{
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+}
+.nav>.nav-in>ul>li{
+	width: 100px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	float: left;
+	padding: 10px 0;
+	margin: 0 40px;
+	position: relative;
+}
+.nav>.nav-in>ul>li:nth-child(4){
+	background-color: #fff;
+	color: #8ba02b;
+}
+.nav>.nav-in>ul>li::after{
+	content: "|";
+	color: white;
+	position: absolute;
+	right: -35px;
+}
+.nav>.nav-in>ul>li:last-child::after{
+	content: "";
+}
+.nav>.nav-in>ul>li:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #8ba02b;
+}
+.nav>.nav-in>div{
+	height: 40px;
+	float: right;
+	line-height: 40px;
+	position: relative;
+}
+.nav>.nav-in>div>img{
+	position: absolute;
+	left: -30px;
+	top: 10px;
+}
+/*内容*/
+.content{
+	width: 1200px;
+    margin: 0 auto;
+  /*  background-color: pink;*/
+    margin-top: 40px;
+
+}
+
+.content>div:first-child{
+	/*height: 590px;*/
+}
+.content .biao{
+	margin-top: -3px;
+}
+
+/*下一样式*/
+.content .product{
+	width: 100%;
+	height: 35px;
+	color: white;
+	background-color:  #8ba02b;
+}
+.content .product>span{
+	display: block;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.content .product>div{
+	float: right;
+	margin-top: 5px;
+	margin-right: 50px;	
+	position: relative;
+}
+.content .product>div>img{
+	position:absolute;
+	top: 3px;
+	right: 220px;
+}
+.content .product>div>span>span{
+    color: #cbfe06;
+}
+.content .pic{
+	margin-top: 35px;
+}
+.content .pic>div{
+	width: 100%;
+	height: 255px;
+	margin-bottom: 35px;
+	padding-left: 20px;
+}
+.content .pic>div>div{
+	width: 655px;
+	height: 255px;
+	float: right;
+	margin-right: 10px;
+}
+.content .pic>div>div>p:first-child{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.content .pic>div>div>p:nth-child(2){
+	font-size: 12px;
+	margin-top: 30px;
+	line-height: 30px;
+	text-indent:2em;
+}
+.content .pic>div>div>p:nth-child(3){
+	float: right;
+	margin-right: 50px;
+	margin-top: 20px;
+}
+.content .fenye{
+	width: 1200px;
+	/*height: 100px;*/
+	display: flex;
+	justify-content:center;
+	
+}
+.content .fenye input{
+	width: 30px;
+	border: 1px solid #8ba02b;
+
+}
+.content .fenye .d1{
+	margin:40px 20px;
+
+}
+/*END 内容*/
+/*尾部*/
+.foot>div:first-child{
+	width: 100%;
+	height: 40px;
+	background-color: #8ba02b;
+	
+}
+.foot>div>ul{
+	margin:0 500px;
+}
+.foot>div>ul>li{
+	width: 100px;
+	height: 20px;
+	color: #fff;
+	text-align: center;
+	float: left;
+	padding: 10px 0;
+	margin: 0 40px;
+	position: relative;
+}
+.foot>div>ul>li::after{
+	content: "|";
+	position: absolute;
+	right: -35px;
+	color: white;
+}
+.foot>div>ul>li:last-child::after{
+	content: "";
+}
+.foot>div>ul>li:hover{
+	cursor: pointer;
+	background-color: #fff;
+	color: #8ba02b;
+}
+.foot p{
+	text-align: center;
+	font-weight: bold;
+	margin: 20px 0;
+}
+/*尾部 end*/
